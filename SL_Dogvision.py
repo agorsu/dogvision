@@ -24,4 +24,4 @@ with st.spinner("Loading...."):
 
         # write classification
         st.write(f"## {class_name.title()}")
-        st.write(f"### score: {int(conf_score)}%")
+        st.progress(conf_score*0.01, text=f"### confidence {int(conf_score)}%")
